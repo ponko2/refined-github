@@ -10,7 +10,10 @@ export default defineBackground(() => {
 export type MenuItemId =
   | "toggleResolvedDetails"
   | "openResolvedDetails"
-  | "closeResolvedDetails";
+  | "closeResolvedDetails"
+  | "toggleFilesToReviewed"
+  | "changeFilesToReviewed"
+  | "changeFilesToUnreviewed";
 
 export type InvokeMenuItemFunctionMessage = {
   type: "invokeMenuItemFunction";
@@ -37,6 +40,23 @@ const menuItems: Record<
     id: "closeResolvedDetails",
     title: "全て閉じる",
     documentUrlPatterns: ["https://github.com/*/pull/*"],
+  },
+  toggleFilesToReviewed: {
+    id: "toggleFilesToReviewed",
+    title: "ファイルの確認状態を切り替え",
+    documentUrlPatterns: ["https://github.com/*/pull/*/files"],
+  },
+  changeFilesToReviewed: {
+    parentId: "toggleFilesToReviewed",
+    id: "changeFilesToReviewed",
+    title: "全て確認済みに変更",
+    documentUrlPatterns: ["https://github.com/*/pull/*/files"],
+  },
+  changeFilesToUnreviewed: {
+    parentId: "toggleFilesToReviewed",
+    id: "changeFilesToUnreviewed",
+    title: "全て未確認に変更",
+    documentUrlPatterns: ["https://github.com/*/pull/*/files"],
   },
 };
 

@@ -51,6 +51,24 @@ const menuItems: Record<MenuItemId, () => void> = {
   closeResolvedDetails() {
     toggleDetails('details[data-resolved="true"][open]');
   },
+  /**
+   * ファイルの確認状態を切り替え
+   */
+  toggleFilesToReviewed() {
+    // do nothing
+  },
+  /**
+   * 全てのファイルをレビュー済みに変更
+   */
+  changeFilesToReviewed() {
+    clickElements(".js-reviewed-checkbox:not(:checked)");
+  },
+  /**
+   * 全てのファイルを未レビュー状態に変更
+   */
+  changeFilesToUnreviewed() {
+    clickElements(".js-reviewed-checkbox:checked");
+  },
 };
 
 // コンテキストメニューに対応する関数を実行
@@ -83,6 +101,21 @@ function toggleMenuItemVisibility() {
     menuItemId: "closeResolvedDetails",
     visible: hasElement('details[data-resolved="true"][open]'),
   } satisfies ToggleMenuItemVisibilityMessage);
+  void browser.runtime.sendMessage({
+    type: "toggleMenuItemVisibility",
+    menuItemId: "toggleFilesToReviewed",
+    visible: hasElement(".js-reviewed-checkbox"),
+  } satisfies ToggleMenuItemVisibilityMessage);
+  void browser.runtime.sendMessage({
+    type: "toggleMenuItemVisibility",
+    menuItemId: "changeFilesToReviewed",
+    visible: hasElement(".js-reviewed-checkbox:not(:checked)"),
+  } satisfies ToggleMenuItemVisibilityMessage);
+  void browser.runtime.sendMessage({
+    type: "toggleMenuItemVisibility",
+    menuItemId: "changeFilesToUnreviewed",
+    visible: hasElement(".js-reviewed-checkbox:checked"),
+  } satisfies ToggleMenuItemVisibilityMessage);
 }
 
 /**
@@ -104,6 +137,19 @@ function toggleDetails(selectors: string) {
   for (const element of document.querySelectorAll(selectors)) {
     if (element instanceof HTMLDetailsElement) {
       element.open = !element.open;
+    }
+  }
+}
+
+/**
+ * 全ての要素をクリック
+ *
+ * @param {string} selectors セレクター
+ */
+function clickElements(selectors: string) {
+  for (const element of document.querySelectorAll(selectors)) {
+    if (element instanceof HTMLElement) {
+      element.click();
     }
   }
 }
