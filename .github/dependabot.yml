@@ -34,3 +34,7 @@ updates:
     commit-message:
       prefix: build
     versioning-strategy: increase
+    groups:
+      commitlint:
+        patterns:
+          - "@commitlint/*"
