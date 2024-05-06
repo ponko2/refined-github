@@ -5,5 +5,6 @@ export default defineConfig({
   manifest: {
     name: "Refined GitHub",
     host_permissions: ["*://github.com/*", "*://gist.github.com/*"],
+    permissions: ["contextMenus"],
   },
 });
