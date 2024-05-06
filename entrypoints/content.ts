@@ -69,6 +69,12 @@ const menuItems: Record<MenuItemId, () => void> = {
   changeFilesToUnreviewed() {
     clickElements(".js-reviewed-checkbox:checked");
   },
+  /**
+   * 差分を全て読み込む
+   */
+  loadDiffs() {
+    clickElements(".js-diff-load");
+  },
 };
 
 // コンテキストメニューに対応する関数を実行
@@ -115,6 +121,11 @@ function toggleMenuItemVisibility() {
     type: "toggleMenuItemVisibility",
     menuItemId: "changeFilesToUnreviewed",
     visible: hasElement(".js-reviewed-checkbox:checked"),
+  } satisfies ToggleMenuItemVisibilityMessage);
+  void browser.runtime.sendMessage({
+    type: "toggleMenuItemVisibility",
+    menuItemId: "loadDiffs",
+    visible: hasElement(".js-diff-load"),
   } satisfies ToggleMenuItemVisibilityMessage);
 }
 

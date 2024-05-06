@@ -13,7 +13,8 @@ export type MenuItemId =
   | "closeResolvedDetails"
   | "toggleFilesToReviewed"
   | "changeFilesToReviewed"
-  | "changeFilesToUnreviewed";
+  | "changeFilesToUnreviewed"
+  | "loadDiffs";
 
 export type InvokeMenuItemFunctionMessage = {
   type: "invokeMenuItemFunction";
@@ -57,6 +58,15 @@ const menuItems: Record<
     id: "changeFilesToUnreviewed",
     title: "全て未確認に変更",
     documentUrlPatterns: ["https://github.com/*/pull/*/files"],
+  },
+  loadDiffs: {
+    id: "loadDiffs",
+    title: "差分を全て読み込む",
+    documentUrlPatterns: [
+      "https://github.com/*/commit/*",
+      "https://github.com/*/pull/*/files",
+      "https://github.com/*/pull/*/commits/*",
+    ],
   },
 };
 
