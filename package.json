@@ -1,0 +1,23 @@
+{
+  "name": "refined-github",
+  "description": "Simplifies the GitHub interface and adds useful features",
+  "version": "0.1.0",
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "wxt": "^0.18.1"
+  },
+  "packageManager": "pnpm@9.0.6",
+  "private": true,
+  "scripts": {
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "compile": "tsc --noEmit",
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "postinstall": "wxt prepare",
+    "setup": "corepack enable pnpm",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox"
+  },
+  "type": "module"
+}
