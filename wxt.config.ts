@@ -4,5 +4,6 @@ import { defineConfig } from "wxt";
 export default defineConfig({
   manifest: {
     name: "Refined GitHub",
+    host_permissions: ["*://github.com/*", "*://gist.github.com/*"],
   },
 });
