@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "EditorConfig.EditorConfig",
+    "biomejs.biome",
     "ms-vscode-remote.vscode-remote-extensionpack"
   ]
 }
