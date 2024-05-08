@@ -33,8 +33,8 @@ importers:
         specifier: ^5.4.5
         version: 5.4.5
       wxt:
-        specifier: ^0.18.1
-        version: 0.18.1(@types/node@20.12.8)(rollup@4.17.2)
+        specifier: ^0.18.2
+        version: 0.18.2(@types/node@20.12.8)(rollup@4.17.2)
 
 packages:
 
@@ -2411,8 +2411,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  wxt@0.18.1:
-    resolution: {integrity: sha512-ya+UpS3ERkXq5uKy9LDk1a/AVlieROaGnk5AlnJV3faLQwQuzFibA0UH2lO4KwA/QnkFtK5FVs8f/QNqYw+7mw==}
+  wxt@0.18.2:
+    resolution: {integrity: sha512-yZubyR/MSJi7mwGA8C9MfuiRYOeXHOiP7+DwTwzdbWNKWGIRT06tsCcuoBKKaSPVjlBMPsBsOjOSGvfxjwJheA==}
     hasBin: true
 
   xdg-basedir@5.1.0:
@@ -4763,7 +4763,7 @@ snapshots:
 
   ws@8.16.0: {}
 
-  wxt@0.18.1(@types/node@20.12.8)(rollup@4.17.2):
+  wxt@0.18.2(@types/node@20.12.8)(rollup@4.17.2):
     dependencies:
       '@aklinker1/rollup-plugin-visualizer': 5.12.0(rollup@4.17.2)
       '@types/webextension-polyfill': 0.10.7
