@@ -33,8 +33,8 @@ importers:
         specifier: ^5.4.5
         version: 5.4.5
       wxt:
-        specifier: ^0.18.2
-        version: 0.18.2(@types/node@20.12.11)(rollup@4.17.2)
+        specifier: ^0.18.3
+        version: 0.18.3(@types/node@20.12.11)(rollup@4.17.2)
 
 packages:
 
@@ -756,10 +756,6 @@ packages:
   brace-expansion@2.0.1:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
 
-  braces@3.0.2:
-    resolution: {integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==}
-    engines: {node: '>=8'}
-
   braces@3.0.3:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
     engines: {node: '>=8'}
@@ -1183,10 +1179,6 @@ packages:
   filesize@10.1.1:
     resolution: {integrity: sha512-L0cdwZrKlwZQkMSFnCflJ6J2Y+5egO/p3vgRSDQGxQt++QbUZe5gMbRO6kg6gzwQDPvq2Fk9AmoxUNfZ5gdqaQ==}
     engines: {node: '>= 10.4.0'}
-
-  fill-range@7.0.1:
-    resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}
-    engines: {node: '>=8'}
 
   fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
@@ -1673,10 +1665,6 @@ packages:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
 
-  micromatch@4.0.6:
-    resolution: {integrity: sha512-Y4Ypn3oujJYxJcMacVgcs92wofTHxp9FzfDpQON4msDefoC0lb3ETvQLOdLcbhSwU1bz8HrL/1sygfBIHudrkQ==}
-    engines: {node: '>=8.6'}
-
   micromatch@4.0.7:
     resolution: {integrity: sha512-LPP/3KorzCwBxfeUuZmaR6bG2kdeHSbe0P2tY3FLRU4vYrjYz5hI4QZwV0njUx3jeuKe67YukQ1LSPZBKDqO/Q==}
     engines: {node: '>=8.6'}
@@ -1916,10 +1904,6 @@ packages:
   picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
-
-  picomatch@4.0.2:
-    resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
-    engines: {node: '>=12'}
 
   pidtree@0.6.0:
     resolution: {integrity: sha512-eG2dWTVw5bzqGRztnHExczNxt5VGsE6OwTeCG3fdUf9KBsZzO3R5OIIIzWR+iZA0NtZ+RDVdaoE2dK1cn6jH4g==}
@@ -2424,8 +2408,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  wxt@0.18.2:
-    resolution: {integrity: sha512-yZubyR/MSJi7mwGA8C9MfuiRYOeXHOiP7+DwTwzdbWNKWGIRT06tsCcuoBKKaSPVjlBMPsBsOjOSGvfxjwJheA==}
+  wxt@0.18.3:
+    resolution: {integrity: sha512-AFoppfr35LLlPpYyF5nGSR4n7HfTzdq+ihjewL0Urw8Bv83Ld/Cnw+xv7AF0xjZFyKKI/d+AAA0NRdl4cHxAng==}
     hasBin: true
 
   xdg-basedir@5.1.0:
@@ -3044,10 +3028,6 @@ snapshots:
     dependencies:
       balanced-match: 1.0.2
 
-  braces@3.0.2:
-    dependencies:
-      fill-range: 7.0.1
-
   braces@3.0.3:
     dependencies:
       fill-range: 7.1.1
@@ -3125,7 +3105,7 @@ snapshots:
   chokidar@3.6.0:
     dependencies:
       anymatch: 3.1.3
-      braces: 3.0.2
+      braces: 3.0.3
       glob-parent: 5.1.2
       is-binary-path: 2.1.0
       is-glob: 4.0.3
@@ -3529,7 +3509,7 @@ snapshots:
       '@nodelib/fs.walk': 1.2.8
       glob-parent: 5.1.2
       merge2: 1.4.1
-      micromatch: 4.0.6
+      micromatch: 4.0.7
 
   fastq@1.17.1:
     dependencies:
@@ -3540,10 +3520,6 @@ snapshots:
       pend: 1.2.0
 
   filesize@10.1.1: {}
-
-  fill-range@7.0.1:
-    dependencies:
-      to-regex-range: 5.0.1
 
   fill-range@7.1.1:
     dependencies:
@@ -3990,11 +3966,6 @@ snapshots:
 
   merge2@1.4.1: {}
 
-  micromatch@4.0.6:
-    dependencies:
-      braces: 3.0.3
-      picomatch: 4.0.2
-
   micromatch@4.0.7:
     dependencies:
       braces: 3.0.3
@@ -4248,8 +4219,6 @@ snapshots:
   picocolors@1.0.0: {}
 
   picomatch@2.3.1: {}
-
-  picomatch@4.0.2: {}
 
   pidtree@0.6.0: {}
 
@@ -4777,7 +4746,7 @@ snapshots:
 
   ws@8.16.0: {}
 
-  wxt@0.18.2(@types/node@20.12.11)(rollup@4.17.2):
+  wxt@0.18.3(@types/node@20.12.11)(rollup@4.17.2):
     dependencies:
       '@aklinker1/rollup-plugin-visualizer': 5.12.0(rollup@4.17.2)
       '@types/webextension-polyfill': 0.10.7
