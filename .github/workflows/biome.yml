@@ -1,7 +1,8 @@
-name: reviewdog
+name: Biome
 on:
-  pull_request:
+  push:
     branches: [main]
+  pull_request:
 permissions:
   contents: read
   pull-requests: write
@@ -15,10 +16,4 @@ jobs:
       - name: Setup Biome
         uses: biomejs/setup-biome@v2
       - name: Run Biome
-        run: biome check --apply .
-      - name: Run reviewdog
-        uses: reviewdog/action-suggester@v1
-        with:
-          fail_on_error: true
-          level: error
-          tool_name: Biome
+        run: biome ci
