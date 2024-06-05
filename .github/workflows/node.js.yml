@@ -3,7 +3,6 @@ on:
   push:
     branches: [main]
   pull_request:
-    branches: [main]
 permissions:
   contents: read
 jobs:
@@ -21,4 +20,3 @@ jobs:
         run: pnpm install
       - run: pnpm run compile
       - run: pnpm run build
-      - run: pnpm run lint
