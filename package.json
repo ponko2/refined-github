@@ -11,7 +11,7 @@
     "is-ci": "^3.0.1",
     "lint-staged": "^15.2.7",
     "typescript": "^5.5.2",
-    "wxt": "^0.18.7"
+    "wxt": "^0.18.9"
   },
   "packageManager": "pnpm@9.3.0",
   "private": true,

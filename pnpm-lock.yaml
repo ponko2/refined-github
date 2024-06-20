@@ -33,8 +33,8 @@ importers:
         specifier: ^5.5.2
         version: 5.5.2
       wxt:
-        specifier: ^0.18.7
-        version: 0.18.7(@types/node@20.14.2)(rollup@4.18.0)
+        specifier: ^0.18.9
+        version: 0.18.9(@types/node@20.14.2)(rollup@4.18.0)
 
 packages:
 
@@ -2318,6 +2318,11 @@ packages:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
 
+  vite-node@1.6.0:
+    resolution: {integrity: sha512-de6HJgzC+TFzOu0NTC4RAIsyf/DY/ibWDYQUcuEA84EMHhcefTUGkjFHKKEJhQN4A+6I0u++kr3l36ZF2d7XRw==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    hasBin: true
+
   vite@5.3.1:
     resolution: {integrity: sha512-XBmSKRLXLxiaPYamLv3/hnP/KXDai1NDexN0FpkTaZXTfycHvkRHoenpgl/fvuK/kPbB6xAgoyiryAhQNxYmAQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
@@ -2416,8 +2421,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  wxt@0.18.7:
-    resolution: {integrity: sha512-wWbwVu46IX2q1+w9jTzb4Lq0gGK7Bt2BQEOFXmnZrW3jnESG2lm+cmcWepN/ORRL06uILHIb8mpISKuSyn7fyw==}
+  wxt@0.18.9:
+    resolution: {integrity: sha512-kIo5pfe0bCGvoVk/+UsT7HuckiJ1UmHjaXT2tIDYFjatYwCdUnZVFoj72/nXXaKH4AxaNmznl3wUCTR0D/8fOA==}
     hasBin: true
 
   xdg-basedir@5.1.0:
@@ -4657,6 +4662,23 @@ snapshots:
 
   uuid@8.3.2: {}
 
+  vite-node@1.6.0(@types/node@20.14.2):
+    dependencies:
+      cac: 6.7.14
+      debug: 4.3.5
+      pathe: 1.1.2
+      picocolors: 1.0.1
+      vite: 5.3.1(@types/node@20.14.2)
+    transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - lightningcss
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+
   vite@5.3.1(@types/node@20.14.2):
     dependencies:
       esbuild: 0.21.5
@@ -4758,7 +4780,7 @@ snapshots:
 
   ws@8.16.0: {}
 
-  wxt@0.18.7(@types/node@20.14.2)(rollup@4.18.0):
+  wxt@0.18.9(@types/node@20.14.2)(rollup@4.18.0):
     dependencies:
       '@aklinker1/rollup-plugin-visualizer': 5.12.0(rollup@4.18.0)
       '@types/webextension-polyfill': 0.10.7
@@ -4797,6 +4819,7 @@ snapshots:
       publish-browser-extension: 2.1.3
       unimport: 3.7.2(rollup@4.18.0)
       vite: 5.3.1(@types/node@20.14.2)
+      vite-node: 1.6.0(@types/node@20.14.2)
       web-ext-run: 0.2.0
       webextension-polyfill: 0.10.0
     transitivePeerDependencies:
