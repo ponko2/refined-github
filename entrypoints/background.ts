@@ -45,19 +45,28 @@ const menuItems: Record<
   toggleFilesToReviewed: {
     id: "toggleFilesToReviewed",
     title: "ファイルの確認状態を切り替え",
-    documentUrlPatterns: ["https://github.com/*/pull/*/files"],
+    documentUrlPatterns: [
+      "https://github.com/*/pull/*/files",
+      "https://github.com/*/pull/*/files?*",
+    ],
   },
   changeFilesToReviewed: {
     parentId: "toggleFilesToReviewed",
     id: "changeFilesToReviewed",
     title: "全て確認済みに変更",
-    documentUrlPatterns: ["https://github.com/*/pull/*/files"],
+    documentUrlPatterns: [
+      "https://github.com/*/pull/*/files",
+      "https://github.com/*/pull/*/files?*",
+    ],
   },
   changeFilesToUnreviewed: {
     parentId: "toggleFilesToReviewed",
     id: "changeFilesToUnreviewed",
     title: "全て未確認に変更",
-    documentUrlPatterns: ["https://github.com/*/pull/*/files"],
+    documentUrlPatterns: [
+      "https://github.com/*/pull/*/files",
+      "https://github.com/*/pull/*/files?*",
+    ],
   },
   loadDiffs: {
     id: "loadDiffs",
@@ -65,6 +74,7 @@ const menuItems: Record<
     documentUrlPatterns: [
       "https://github.com/*/commit/*",
       "https://github.com/*/pull/*/files",
+      "https://github.com/*/pull/*/files?*",
       "https://github.com/*/pull/*/commits/*",
     ],
   },
