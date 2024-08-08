@@ -8,7 +8,6 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@tsconfig/strictest": "^2.0.5",
     "husky": "^9.1.4",
-    "is-ci": "^3.0.1",
     "lint-staged": "^15.2.8",
     "typescript": "^5.5.4",
     "wxt": "^0.19.4"
@@ -24,7 +23,7 @@
     "fix": "biome check --write",
     "lint": "biome check",
     "postinstall": "wxt prepare",
-    "prepare": "is-ci || husky",
+    "prepare": "node .husky/install.mjs",
     "setup": "corepack enable pnpm",
     "zip": "wxt zip",
     "zip:firefox": "wxt zip -b firefox"
