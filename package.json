@@ -12,7 +12,7 @@
     "typescript": "^5.5.4",
     "wxt": "^0.19.8"
   },
-  "packageManager": "pnpm@9.7.0",
+  "packageManager": "pnpm@9.9.0",
   "private": true,
   "scripts": {
     "build": "wxt build",
