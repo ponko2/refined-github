@@ -17,7 +17,6 @@
   "scripts": {
     "build": "wxt build",
     "build:firefox": "wxt build -b firefox",
-    "compile": "tsc --noEmit",
     "dev": "wxt",
     "dev:firefox": "wxt -b firefox",
     "fix": "biome check --write",
@@ -25,6 +24,7 @@
     "postinstall": "wxt prepare",
     "prepare": "node .husky/install.mjs",
     "setup": "corepack enable pnpm",
+    "typecheck": "tsc --noEmit",
     "zip": "wxt zip",
     "zip:firefox": "wxt zip -b firefox"
   },
