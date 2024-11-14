@@ -10,9 +10,14 @@
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "typescript": "^5.6.3",
-    "wxt": "^0.19.13"
+    "wxt": "^0.19.14"
   },
   "packageManager": "pnpm@9.12.3",
+  "pnpm": {
+    "overrides": {
+      "@types/webextension-polyfill": "0.10.7"
+    }
+  },
   "private": true,
   "scripts": {
     "build": "wxt build",
