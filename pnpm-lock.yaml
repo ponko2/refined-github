@@ -27,14 +27,14 @@ importers:
         specifier: ^9.1.7
         version: 9.1.7
       lint-staged:
-        specifier: ^15.4.1
-        version: 15.4.1
+        specifier: ^15.4.2
+        version: 15.4.2
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
       wxt:
         specifier: ^0.19.25
-        version: 0.19.25(@types/node@22.10.7)(rollup@4.31.0)(yaml@2.6.1)
+        version: 0.19.25(@types/node@22.10.7)(rollup@4.31.0)(yaml@2.7.0)
 
 packages:
 
@@ -928,8 +928,8 @@ packages:
   colorette@2.0.20:
     resolution: {integrity: sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==}
 
-  commander@12.1.0:
-    resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
+  commander@13.1.0:
+    resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
     engines: {node: '>=18'}
 
   commander@2.9.0:
@@ -996,10 +996,6 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
-
-  cross-spawn@7.0.5:
-    resolution: {integrity: sha512-ZVJrKKYunU38/76t0RMOulHOnUcbU9GbpWKAOZ0mhjr7CX6FVrH+4FrAapSOekrgFQ3f/8gwMEuIft0aKq6Hug==}
-    engines: {node: '>= 8'}
 
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
@@ -1647,8 +1643,8 @@ packages:
   linkedom@0.18.7:
     resolution: {integrity: sha512-M8XBnWzYG5YckEQgySyIb1Cjh9QarGVxCm+ihTUgcvfbuiLG23748Om6da910yzLMff3wKEvPnZyFo/rhsmFhg==}
 
-  lint-staged@15.4.1:
-    resolution: {integrity: sha512-P8yJuVRyLrm5KxCtFx+gjI5Bil+wO7wnTl7C3bXhvtTaAFGirzeB24++D0wGoUwxrUKecNiehemgCob9YL39NA==}
+  lint-staged@15.4.2:
+    resolution: {integrity: sha512-gCqzB/Li281uZJgReNci+oXXqUEdrFAQAzTE/LwoxxiEuP41vozNe4BATS+4ehdqkWn+Z6bGc3EDcBja3npBVw==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -2551,8 +2547,8 @@ packages:
   yallist@4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
 
-  yaml@2.6.1:
-    resolution: {integrity: sha512-7r0XPzioN/Q9kXBro/XPnA6kznR73DHq+GXh5ON7ZozRO6aMjbmiBuKste2wslTFkC5d1dw0GooOCepZXJ2SAg==}
+  yaml@2.7.0:
+    resolution: {integrity: sha512-+hSoy/QHluxmC9kCIJyL/uyFmLmc+e5CFR5Wa+bpIhIj85LVb9ZH2nVnqrHoSvKogwODv0ClqZkmiSSaIH5LTA==}
     engines: {node: '>= 14'}
     hasBin: true
 
@@ -3329,7 +3325,7 @@ snapshots:
 
   colorette@2.0.20: {}
 
-  commander@12.1.0: {}
+  commander@13.1.0: {}
 
   commander@2.9.0:
     dependencies:
@@ -3400,12 +3396,6 @@ snapshots:
       parse-json: 5.2.0
     optionalDependencies:
       typescript: 5.7.3
-
-  cross-spawn@7.0.5:
-    dependencies:
-      path-key: 3.1.1
-      shebang-command: 2.0.0
-      which: 2.0.2
 
   cross-spawn@7.0.6:
     dependencies:
@@ -3641,7 +3631,7 @@ snapshots:
 
   execa@8.0.1:
     dependencies:
-      cross-spawn: 7.0.5
+      cross-spawn: 7.0.6
       get-stream: 8.0.1
       human-signals: 5.0.0
       is-stream: 3.0.0
@@ -4042,10 +4032,10 @@ snapshots:
       htmlparser2: 9.1.0
       uhyphen: 0.2.0
 
-  lint-staged@15.4.1:
+  lint-staged@15.4.2:
     dependencies:
       chalk: 5.4.1
-      commander: 12.1.0
+      commander: 13.1.0
       debug: 4.4.0
       execa: 8.0.1
       lilconfig: 3.1.3
@@ -4053,7 +4043,7 @@ snapshots:
       micromatch: 4.0.8
       pidtree: 0.6.0
       string-argv: 0.3.2
-      yaml: 2.6.1
+      yaml: 2.7.0
     transitivePeerDependencies:
       - supports-color
 
@@ -4842,7 +4832,7 @@ snapshots:
       '@types/node': 22.10.7
       fsevents: 2.3.3
 
-  vite@6.0.8(@types/node@22.10.7)(jiti@1.21.7)(yaml@2.6.1):
+  vite@6.0.8(@types/node@22.10.7)(jiti@1.21.7)(yaml@2.7.0):
     dependencies:
       esbuild: 0.24.2
       postcss: 8.5.1
@@ -4851,7 +4841,7 @@ snapshots:
       '@types/node': 22.10.7
       fsevents: 2.3.3
       jiti: 1.21.7
-      yaml: 2.6.1
+      yaml: 2.7.0
 
   watchpack@2.4.1:
     dependencies:
@@ -4943,7 +4933,7 @@ snapshots:
 
   ws@8.18.0: {}
 
-  wxt@0.19.25(@types/node@22.10.7)(rollup@4.31.0)(yaml@2.6.1):
+  wxt@0.19.25(@types/node@22.10.7)(rollup@4.31.0)(yaml@2.7.0):
     dependencies:
       '@1natsu/wait-element': 4.1.2
       '@aklinker1/rollup-plugin-visualizer': 5.12.0(rollup@4.31.0)
@@ -4987,7 +4977,7 @@ snapshots:
       publish-browser-extension: 2.3.0
       scule: 1.3.0
       unimport: 3.14.6(rollup@4.31.0)
-      vite: 6.0.8(@types/node@22.10.7)(jiti@1.21.7)(yaml@2.6.1)
+      vite: 6.0.8(@types/node@22.10.7)(jiti@1.21.7)(yaml@2.7.0)
       vite-node: 2.1.8(@types/node@22.10.7)
       web-ext-run: 0.2.2
       webextension-polyfill: 0.12.0
@@ -5020,7 +5010,7 @@ snapshots:
 
   yallist@4.0.0: {}
 
-  yaml@2.6.1: {}
+  yaml@2.7.0: {}
 
   yargs-parser@20.2.9: {}
 
