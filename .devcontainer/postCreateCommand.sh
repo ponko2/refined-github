@@ -5,8 +5,9 @@ set -euo pipefail
 git config --global --add safe.directory /workspaces/refined-github
 
 npm uninstall -g pnpm
-sudo corepack enable pnpm
-corepack install --global pnpm
-pnpm config set store-dir ~/.local/share/pnpm/store
+wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.bashrc" SHELL="$(which bash)" bash -
+export PNPM_HOME="$HOME/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+pnpm config set store-dir "$HOME/.local/share/pnpm/store"
 
 pnpm install --force
