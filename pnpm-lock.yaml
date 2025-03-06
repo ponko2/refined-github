@@ -33,8 +33,8 @@ importers:
         specifier: ^5.8.2
         version: 5.8.2
       wxt:
-        specifier: ^0.19.28
-        version: 0.19.28(@types/node@22.13.9)(rollup@4.34.9)(yaml@2.7.0)
+        specifier: ^0.19.29
+        version: 0.19.29(@types/node@22.13.9)(rollup@4.34.9)(yaml@2.7.0)
 
 packages:
 
@@ -548,15 +548,15 @@ packages:
   '@webext-core/match-patterns@1.0.3':
     resolution: {integrity: sha512-NY39ACqCxdKBmHgw361M9pfJma8e4AZo20w9AY+5ZjIj1W2dvXC8J31G5fjfOGbulW9w4WKpT8fPooi0mLkn9A==}
 
-  '@wxt-dev/storage@1.1.0':
-    resolution: {integrity: sha512-veya6MAc8B531W/zgm7JcCQa254B2YsMb3h9D48kUUghBDMKXqoioKSfVWEF+TbbswsMP3H9qfZ2bobNKcP+2g==}
+  '@wxt-dev/storage@1.1.1':
+    resolution: {integrity: sha512-H1vYWeoWz03INV4r+sLYDFil88b3rgMMfgGp/EXy3bLbveJeiMiFs/G0bsBN2Ra87Iqlf2oVYRb/ABQpAugbew==}
 
   JSONStream@1.3.5:
     resolution: {integrity: sha512-E+iruNOY8VV9s4JEbe1aNEm6MiszPRr/UfcHMz0TQh1BXSxHK+ASV1R6W4HpjBhSeS+54PIsAMCBmwD06LLsqQ==}
     hasBin: true
 
-  acorn@8.14.0:
-    resolution: {integrity: sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==}
+  acorn@8.14.1:
+    resolution: {integrity: sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -1069,8 +1069,8 @@ packages:
     resolution: {integrity: sha512-VyhnebXciFV2DESc+p6B+y0LjSm0krU4OgJN44qFAhBY0TJ+1V61tYD2+wHusZ6F9n5K+vl8k0sTy7PEfV4qpg==}
     engines: {node: '>=16.17'}
 
-  exsolve@1.0.1:
-    resolution: {integrity: sha512-Smf0iQtkQVJLaph8r/qS8C8SWfQkaq9Q/dFcD44MLbJj6DNhlWefVuaS21SjfqOsBbjVlKtbCj6L9ekXK6EZUg==}
+  exsolve@1.0.2:
+    resolution: {integrity: sha512-ZEcIMbthn2zeX4/wD/DLxDUjuCltHXT8Htvm/JFlTkdYgWh2+HGppgwwNUnIVxzxP7yJOPtuBAec0dLx6lVY8w==}
 
   extract-zip@2.0.1:
     resolution: {integrity: sha512-GDhU9ntwuKyGXdZBUgTIe+vXnWj0fppUEtMDL0+idd5Sta8TGpHssn/eusA9mrPr9qNDym6SxAYZjNvCn/9RBg==}
@@ -2265,8 +2265,8 @@ packages:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
     hasBin: true
 
-  vite-node@3.0.7:
-    resolution: {integrity: sha512-2fX0QwX4GkkkpULXdT1Pf4q0tC1i1lFOyseKoonavXUNlQ77KpW2XqBGGNIm/J4Ows4KxgGJzDguYVPKwG/n5A==}
+  vite-node@3.0.8:
+    resolution: {integrity: sha512-6PhR4H9VGlcwXZ+KWCdMqbtG649xCPZqfI9j2PsK1FcXgEzro5bGHcVKFCTqPLaNKZES8Evqv4LwvZARsq5qlg==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
 
@@ -2376,8 +2376,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  wxt@0.19.28:
-    resolution: {integrity: sha512-rChoeK1kRK6GzSY2CgnFtCzRhKJD2pT6tjqrJ6NhJPYfkhvhDs4i3eVTYMxyaVyhPYrMxaXW/De0FO5Eu4nWlQ==}
+  wxt@0.19.29:
+    resolution: {integrity: sha512-n6DRR34OAFczJfZOwJeY5dn+j+w2BTquW2nAX32vk3FMLWUhzpv5svMvSUTyNiFq3P0o3U7YxfxHdmKJnXZHBA==}
     hasBin: true
 
   xdg-basedir@5.1.0:
@@ -2855,7 +2855,7 @@ snapshots:
 
   '@webext-core/match-patterns@1.0.3': {}
 
-  '@wxt-dev/storage@1.1.0':
+  '@wxt-dev/storage@1.1.1':
     dependencies:
       async-mutex: 0.5.0
       dequal: 2.0.3
@@ -2865,7 +2865,7 @@ snapshots:
       jsonparse: 1.3.1
       through: 2.3.8
 
-  acorn@8.14.0: {}
+  acorn@8.14.1: {}
 
   adm-zip@0.5.16: {}
 
@@ -2986,7 +2986,7 @@ snapshots:
       confbox: 0.1.8
       defu: 6.1.4
       dotenv: 16.4.7
-      exsolve: 1.0.1
+      exsolve: 1.0.2
       giget: 2.0.0
       jiti: 2.4.2
       ohash: 2.0.11
@@ -3391,7 +3391,7 @@ snapshots:
       signal-exit: 4.1.0
       strip-final-newline: 3.0.0
 
-  exsolve@1.0.1: {}
+  exsolve@1.0.2: {}
 
   extract-zip@2.0.1:
     dependencies:
@@ -3927,7 +3927,7 @@ snapshots:
 
   mlly@1.7.4:
     dependencies:
-      acorn: 8.14.0
+      acorn: 8.14.1
       pathe: 2.0.3
       pkg-types: 1.3.1
       ufo: 1.5.4
@@ -4178,7 +4178,7 @@ snapshots:
   pkg-types@2.1.0:
     dependencies:
       confbox: 0.2.1
-      exsolve: 1.0.1
+      exsolve: 1.0.2
       pathe: 2.0.3
 
   postcss@8.5.3:
@@ -4535,7 +4535,7 @@ snapshots:
   unimport@3.14.6(rollup@4.34.9):
     dependencies:
       '@rollup/pluginutils': 5.1.4(rollup@4.34.9)
-      acorn: 8.14.0
+      acorn: 8.14.1
       escape-string-regexp: 5.0.0
       estree-walker: 3.0.3
       fast-glob: 3.3.3
@@ -4561,7 +4561,7 @@ snapshots:
 
   unplugin@1.16.1:
     dependencies:
-      acorn: 8.14.0
+      acorn: 8.14.1
       webpack-virtual-modules: 0.6.2
 
   untildify@4.0.0: {}
@@ -4587,7 +4587,7 @@ snapshots:
 
   uuid@8.3.2: {}
 
-  vite-node@3.0.7(@types/node@22.13.9)(jiti@2.4.2)(yaml@2.7.0):
+  vite-node@3.0.8(@types/node@22.13.9)(jiti@2.4.2)(yaml@2.7.0):
     dependencies:
       cac: 6.7.14
       debug: 4.4.0
@@ -4709,7 +4709,7 @@ snapshots:
 
   ws@8.18.0: {}
 
-  wxt@0.19.28(@types/node@22.13.9)(rollup@4.34.9)(yaml@2.7.0):
+  wxt@0.19.29(@types/node@22.13.9)(rollup@4.34.9)(yaml@2.7.0):
     dependencies:
       '@1natsu/wait-element': 4.1.2
       '@aklinker1/rollup-plugin-visualizer': 5.12.0(rollup@4.34.9)
@@ -4718,7 +4718,7 @@ snapshots:
       '@webext-core/fake-browser': 1.3.2
       '@webext-core/isolated-element': 1.1.2
       '@webext-core/match-patterns': 1.0.3
-      '@wxt-dev/storage': 1.1.0
+      '@wxt-dev/storage': 1.1.1
       async-mutex: 0.5.0
       c12: 3.0.2(magicast@0.3.5)
       cac: 6.7.14
@@ -4756,7 +4756,7 @@ snapshots:
       scule: 1.3.0
       unimport: 3.14.6(rollup@4.34.9)
       vite: 6.2.0(@types/node@22.13.9)(jiti@2.4.2)(yaml@2.7.0)
-      vite-node: 3.0.7(@types/node@22.13.9)(jiti@2.4.2)(yaml@2.7.0)
+      vite-node: 3.0.8(@types/node@22.13.9)(jiti@2.4.2)(yaml@2.7.0)
       web-ext-run: 0.2.2
       webextension-polyfill: 0.12.0
     transitivePeerDependencies:

@@ -10,7 +10,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
     "typescript": "^5.8.2",
-    "wxt": "^0.19.28"
+    "wxt": "^0.19.29"
   },
   "packageManager": "pnpm@10.4.1",
   "pnpm": {
