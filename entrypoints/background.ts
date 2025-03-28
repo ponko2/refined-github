@@ -1,4 +1,3 @@
-import type { Menus, Tabs } from "wxt/browser";
 import type { ToggleMenuItemVisibilityMessage } from "~/entrypoints/content";
 
 export default defineBackground(() => {
@@ -23,7 +22,7 @@ export type InvokeMenuItemFunctionMessage = {
 
 const menuItems: Record<
   MenuItemId,
-  { id: MenuItemId } & Omit<Menus.CreateCreatePropertiesType, "id">
+  { id: MenuItemId } & Omit<Browser.contextMenus.CreateProperties, "id">
 > = {
   toggleResolvedDetails: {
     id: "toggleResolvedDetails",
@@ -96,8 +95,8 @@ function createContextMenus() {
 
 // コンテキストメニューに対応する関数を実行
 function handleContextMenuItemClick(
-  { menuItemId }: Menus.OnClickData,
-  tab: Tabs.Tab | undefined,
+  { menuItemId }: Browser.contextMenus.OnClickData,
+  tab: Browser.tabs.Tab | undefined,
 ): void {
   if (typeof tab?.id === "number" && isMenuItemId(menuItemId)) {
     void browser.tabs.sendMessage(tab.id, {
