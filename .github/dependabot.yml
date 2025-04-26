@@ -13,8 +13,6 @@ updates:
       time: "07:00"
       timezone: Asia/Tokyo
     open-pull-requests-limit: 10
-    commit-message:
-      prefix: build
   - package-ecosystem: github-actions
     directory: /
     schedule:
@@ -22,8 +20,6 @@ updates:
       time: "07:00"
       timezone: Asia/Tokyo
     open-pull-requests-limit: 10
-    commit-message:
-      prefix: ci
   - package-ecosystem: npm
     directory: /
     schedule:
@@ -31,8 +27,6 @@ updates:
       time: "07:00"
       timezone: Asia/Tokyo
     open-pull-requests-limit: 10
-    commit-message:
-      prefix: build
     versioning-strategy: increase
     groups:
       commitlint:
