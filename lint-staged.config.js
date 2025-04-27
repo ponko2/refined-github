@@ -3,6 +3,6 @@
  * @type {import('lint-staged').Configuration}
  */
 export default {
-  "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}":
+  "*.{cjs,cts,js,json,jsonc,jsx,mjs,mts,ts,tsx}":
     "biome check --write --no-errors-on-unmatched",
 };
