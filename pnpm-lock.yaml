@@ -1577,8 +1577,8 @@ packages:
     resolution: {integrity: sha512-VXJjc87FScF88uafS3JllDgvAm+c/Slfz06lorj2uAY34rlUu0Nt+v8wreiImcrgAjjIHp1rXpTDlLOGw29WwQ==}
     engines: {node: '>=18'}
 
-  open@10.1.1:
-    resolution: {integrity: sha512-zy1wx4+P3PfhXSEPJNtZmJXfhkkIaxU1VauWIrDZw1O7uJRDRJtKr9n3Ic4NgbA16KyOxOXO2ng9gYwCdXuSXA==}
+  open@10.1.2:
+    resolution: {integrity: sha512-cxN6aIDPz6rm8hbebcP7vrQNhvRcveZoJU72Y7vskh4oIm+BZwBECnx5nTmrlres1Qapvx27Qo1Auukpf8PKXw==}
     engines: {node: '>=18'}
 
   open@8.4.2:
@@ -3640,7 +3640,7 @@ snapshots:
     dependencies:
       mimic-function: 5.0.1
 
-  open@10.1.1:
+  open@10.1.2:
     dependencies:
       default-browser: 5.2.1
       define-lazy-prop: 3.0.0
@@ -4308,7 +4308,7 @@ snapshots:
       normalize-path: 3.0.0
       nypm: 0.6.0
       ohash: 2.0.11
-      open: 10.1.1
+      open: 10.1.2
       ora: 8.2.0
       perfect-debounce: 1.0.0
       picocolors: 1.1.1
