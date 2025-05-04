@@ -17,6 +17,7 @@ jobs:
       - commitlint
       - editorconfig
       - ghalint
+      - triggering-actor
       - typecheck
       - yamllint
       - zizmor
@@ -41,8 +42,17 @@ jobs:
         run: |
           echo "One or more required build workflows failed: ${{ steps.status.outputs.results }}"
           exit 1
+  triggering-actor:
+    name: Validate triggering actor
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Fail if the triggering actor is a bot
+        if: ${{ endsWith(github.triggering_actor, '[bot]') }}
+        run: exit 1
   changed-files:
     name: Get changed files
+    needs: triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     outputs:
@@ -97,7 +107,9 @@ jobs:
   actionlint:
     name: actionlint
     if: ${{ needs.changed-files.outputs.workflows == 'true' }}
-    needs: changed-files
+    needs:
+      - changed-files
+      - triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -114,7 +126,9 @@ jobs:
   biome:
     name: Biome
     if: ${{ needs.changed-files.outputs.biome == 'true' }}
-    needs: changed-files
+    needs:
+      - changed-files
+      - triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -131,7 +145,9 @@ jobs:
   build:
     name: Build
     if: ${{ needs.changed-files.outputs.wxt == 'true' }}
-    needs: changed-files
+    needs:
+      - changed-files
+      - triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -152,6 +168,7 @@ jobs:
   commitlint:
     name: commitlint
     if: ${{ github.event_name == 'pull_request' }}
+    needs: triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -177,6 +194,7 @@ jobs:
           --verbose
   editorconfig:
     name: EditorConfig
+    needs: triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -190,7 +208,9 @@ jobs:
   ghalint:
     name: ghalint
     if: ${{ needs.changed-files.outputs.workflows == 'true' }}
-    needs: changed-files
+    needs:
+      - changed-files
+      - triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -213,7 +233,9 @@ jobs:
   typecheck:
     name: typecheck
     if: ${{ needs.changed-files.outputs.typecheck == 'true' }}
-    needs: changed-files
+    needs:
+      - changed-files
+      - triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -234,7 +256,9 @@ jobs:
   yamllint:
     name: yamllint
     if: ${{ needs.changed-files.outputs.yamllint == 'true' }}
-    needs: changed-files
+    needs:
+      - changed-files
+      - triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
@@ -251,7 +275,9 @@ jobs:
   zizmor:
     name: zizmor
     if: ${{ needs.changed-files.outputs.workflows == 'true' }}
-    needs: changed-files
+    needs:
+      - changed-files
+      - triggering-actor
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
