@@ -9,5 +9,9 @@ export default {
   ignores: [
     (commit) =>
       /^Signed-off-by: dependabot\[bot] <support@github\.com>$/m.test(commit),
+    (commit) =>
+      /^Signed-off-by: renovate\[bot] <29139614\+renovate\[bot]@users\.noreply\.github\.com>$/m.test(
+        commit,
+      ),
   ],
 };
