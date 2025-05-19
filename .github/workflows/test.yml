@@ -231,7 +231,10 @@ jobs:
           cache: pnpm
       - name: Install dependencies
         run: pnpm install
-      - run: pnpm run typecheck
+      - name: Add problem matchers
+        run: echo "::add-matcher::.github/tsc-matcher.json"
+      - name: Run tsc
+        run: pnpm run typecheck
   yamllint:
     name: yamllint
     if: ${{ needs.changed-files.outputs.yamllint == 'true' }}
@@ -246,11 +249,8 @@ jobs:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           persist-credentials: false
-      - uses: reviewdog/action-yamllint@f01d8a48fd8d89f89895499fca2cff09f9e9e8c0 # v1.21.0
-        with:
-          fail_level: error
-          filter_mode: nofilter
-          reporter: github-pr-annotations
+      - name: Run yamllint
+        run: yamllint --format=github --strict .
   zizmor:
     name: zizmor
     if: ${{ needs.changed-files.outputs.workflows == 'true' }}
@@ -268,6 +268,6 @@ jobs:
       - name: Run zizmor
         uses: docker://ghcr.io/zizmorcore/zizmor:1.7.0@sha256:05a722e7c356725b7d7ea9c563871fe0afe511e5d7c114e14f4b07a196e5b022
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           args: -p --format=github --min-severity=low .github/workflows
