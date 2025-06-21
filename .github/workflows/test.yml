@@ -89,14 +89,14 @@ jobs:
               - ".github/workflows/*.{yaml,yml}"
             biome:
               - *wxt
-              - "**.{cjs,cts,js,json,jsonc,jsx,mjs,mts,ts,tsx}"
+              - "**/*.{cjs,cts,js,json,jsonc,jsx,mjs,mts,ts,tsx}"
               - biome.json
             typecheck:
               - *wxt
-              - "**.{cts,mts,ts,tsx}"
+              - "**/*.{cts,mts,ts,tsx}"
             yamllint:
               - *common
-              - "**.{yaml,yml}"
+              - "**/*.{yaml,yml}"
   actionlint:
     name: actionlint
     if: ${{ needs.changed-files.outputs.actions == 'true' }}
