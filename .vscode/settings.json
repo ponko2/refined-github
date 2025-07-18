@@ -1,5 +1,5 @@
 {
-  "biome.enabled": true,
+  "biome.requireConfiguration": true,
   "editor.codeActionsOnSave": {
     "quickfix.biome": "explicit",
     "source.organizeImports": "never",
