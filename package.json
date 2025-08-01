@@ -9,7 +9,7 @@
     "@tsconfig/strictest": "2.0.5",
     "husky": "9.1.7",
     "lint-staged": "16.1.2",
-    "typescript": "5.8.3",
+    "typescript": "5.9.2",
     "wxt": "0.20.7"
   },
   "packageManager": "pnpm@10.13.1",
