@@ -12,7 +12,7 @@
     "typescript": "5.9.2",
     "wxt": "0.20.8"
   },
-  "packageManager": "pnpm@10.15.0",
+  "packageManager": "pnpm@10.15.1",
   "pnpm": {
     "onlyBuiltDependencies": [
       "@biomejs/biome",
