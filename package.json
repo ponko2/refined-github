@@ -12,6 +12,13 @@
     "typescript": "5.9.3",
     "wxt": "0.20.11"
   },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "^24.11.1",
+      "onFail": "download"
+    }
+  },
   "packageManager": "pnpm@10.24.0",
   "private": true,
   "scripts": {
