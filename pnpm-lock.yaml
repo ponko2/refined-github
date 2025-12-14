@@ -13,7 +13,7 @@ importers:
         version: 2.3.8
       '@commitlint/cli':
         specifier: 20.2.0
-        version: 20.2.0(@types/node@24.10.1)(typescript@5.9.3)
+        version: 20.2.0(@types/node@25.0.1)(typescript@5.9.3)
       '@commitlint/config-conventional':
         specifier: 20.2.0
         version: 20.2.0
@@ -28,13 +28,13 @@ importers:
         version: 16.2.7
       node:
         specifier: runtime:^24.11.1
-        version: runtime:24.11.1
+        version: runtime:24.12.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
       wxt:
         specifier: 0.20.11
-        version: 0.20.11(@types/node@24.10.1)(jiti@2.6.1)(rollup@4.53.3)(yaml@2.8.2)
+        version: 0.20.11(@types/node@25.0.1)(jiti@2.6.1)(rollup@4.53.3)(yaml@2.8.2)
 
 packages:
 
@@ -561,8 +561,8 @@ packages:
   '@types/minimatch@3.0.5':
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
 
-  '@types/node@24.10.1':
-    resolution: {integrity: sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==}
+  '@types/node@25.0.1':
+    resolution: {integrity: sha512-czWPzKIAXucn9PtsttxmumiQ9N0ok9FrBwgRWrwmVLlp86BrMExzvXRLFYRJ+Ex3g6yqj+KuaxfX1JTgV2lpfg==}
 
   '@webext-core/fake-browser@1.3.2':
     resolution: {integrity: sha512-jFyPWWz+VkHAC9DRIiIPOyu6X/KlC8dYqSKweHz6tsDb86QawtVgZSpYcM+GOQBlZc5DHFo92jJ7cIq4uBnU0A==}
@@ -1284,8 +1284,8 @@ packages:
     resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
     engines: {node: '>=6'}
 
-  ky@1.14.0:
-    resolution: {integrity: sha512-Rczb6FMM6JT0lvrOlP5WUOCB7s9XKxzwgErzhKlKde1bEV90FXplV1o87fpt4PU/asJFiqjYJxAJyzJhcrxOsQ==}
+  ky@1.14.1:
+    resolution: {integrity: sha512-hYje4L9JCmpEQBtudo+v52X5X8tgWXUYyPcxKSuxQNboqufecl9VMWjGiucAFH060AwPXHZuH+WB2rrqfkmafw==}
     engines: {node: '>=18'}
 
   latest-version@9.0.0:
@@ -1444,94 +1444,94 @@ packages:
   node-notifier@10.0.1:
     resolution: {integrity: sha512-YX7TSyDukOZ0g+gmzjB6abKu+hTGvO8+8+gIFDsRCU2t8fLV/P2unmt+LGFaIa4y64aX98Qksa97rgz4vMNeLQ==}
 
-  node@runtime:24.11.1:
+  node@runtime:24.12.0:
     resolution:
       type: variations
       variants:
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-mLqRmgOQ2MQi1LsxBexbd3I89UFDtMHkudd2kPoHUgY=
+            integrity: sha256-MfPQZbuE8GnlIuVdDTA1vTZMul2KIiM/9oAF0oHou3g=
             type: binary
-            url: https://nodejs.org/download/release/v24.11.1/node-v24.11.1-aix-ppc64.tar.gz
+            url: https://nodejs.org/download/release/v24.12.0/node-v24.12.0-aix-ppc64.tar.gz
           targets:
             - cpu: ppc64
               os: aix
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-sFqjpm7+aAAj+TC9WvP9u9VCeU2lZEyirXEdaMvU3DU=
+            integrity: sha256-MZ8iGtxeRP8O1X6KRBsihPArjcb8h7jrkqapNkP9gIA=
             type: binary
-            url: https://nodejs.org/download/release/v24.11.1/node-v24.11.1-darwin-arm64.tar.gz
+            url: https://nodejs.org/download/release/v24.12.0/node-v24.12.0-darwin-arm64.tar.gz
           targets:
             - cpu: arm64
               os: darwin
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-CWCBttb83T9boPXx1EpH6DA3rS546tomZxwlL+ZN0RE=
+            integrity: sha256-uC6kxi/QjiUMq1nWJeddd8xbCj1gxmmOvuRUXIihacU=
             type: binary
-            url: https://nodejs.org/download/release/v24.11.1/node-v24.11.1-darwin-x64.tar.gz
+            url: https://nodejs.org/download/release/v24.12.0/node-v24.12.0-darwin-x64.tar.gz
           targets:
             - cpu: x64
               os: darwin
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-Dck+xceYsNNH8GjbbSBdA96ppxdl5qU5IraCuRJl1x8=
+            integrity: sha256-myou65io6zc2EiTiodBgMArS3RQ69Y39sW3nhd8PEig=
             type: binary
-            url: https://nodejs.org/download/release/v24.11.1/node-v24.11.1-linux-arm64.tar.gz
+            url: https://nodejs.org/download/release/v24.12.0/node-v24.12.0-linux-arm64.tar.gz
           targets:
             - cpu: arm64
               os: linux
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-zUFAfzNS3i8GbqJsXF0OqbY2I3TWthg4Wp8una0iBhY=
+            integrity: sha256-Zux5tNZPQQmu34IhCHFdC2CXEY35FZwvYyFHfaTqF6o=
             type: binary
-            url: https://nodejs.org/download/release/v24.11.1/node-v24.11.1-linux-ppc64le.tar.gz
+            url: https://nodejs.org/download/release/v24.12.0/node-v24.12.0-linux-ppc64le.tar.gz
           targets:
             - cpu: ppc64le
               os: linux
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-XUyLyl+PJZP5CB3uOYNHYOhaFvphyVDz6G7IWZbwBVA=
+            integrity: sha256-jclgolVdsap3/RMcJb5XG594RLyLJ454cyufWA/n1YA=
             type: binary
-            url: https://nodejs.org/download/release/v24.11.1/node-v24.11.1-linux-s390x.tar.gz
+            url: https://nodejs.org/download/release/v24.12.0/node-v24.12.0-linux-s390x.tar.gz
           targets:
             - cpu: s390x
               os: linux
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-WKX/XMjyIA5Fi+oi4ynVwZlKobER1JnKRuwkEdWCOco=
+            integrity: sha256-YVkifgr318PGuy+pAEUrBKbLiEGnAqeazGEyCdcLBNA=
             type: binary
-            url: https://nodejs.org/download/release/v24.11.1/node-v24.11.1-linux-x64.tar.gz
+            url: https://nodejs.org/download/release/v24.12.0/node-v24.12.0-linux-x64.tar.gz
           targets:
             - cpu: x64
               os: linux
         - resolution:
             archive: zip
             bin: node.exe
-            integrity: sha256-zp7k5Ufr3/NVvrSOMJsWbCTfa+ApHJ6vEDzhXz3p5bQ=
-            prefix: node-v24.11.1-win-arm64
+            integrity: sha256-sF5+Bm+BPTWtPNnCTu2u4HTAEqx+AAcSl2CP3S6UiuM=
+            prefix: node-v24.12.0-win-arm64
             type: binary
-            url: https://nodejs.org/download/release/v24.11.1/node-v24.11.1-win-arm64.zip
+            url: https://nodejs.org/download/release/v24.12.0/node-v24.12.0-win-arm64.zip
           targets:
             - cpu: arm64
               os: win32
         - resolution:
             archive: zip
             bin: node.exe
-            integrity: sha256-U1WubXxJ7dz959NKw0hoIGAKgxv4HcO9ylyNtqm7DnY=
-            prefix: node-v24.11.1-win-x64
+            integrity: sha256-nBJfYa6Ue1LneQlYMPnKwmeEagQ+9xkhg8hAFqqtKBI=
+            prefix: node-v24.12.0-win-x64
             type: binary
-            url: https://nodejs.org/download/release/v24.11.1/node-v24.11.1-win-x64.zip
+            url: https://nodejs.org/download/release/v24.12.0/node-v24.12.0-win-x64.zip
           targets:
             - cpu: x64
               os: win32
-    version: 24.11.1
+    version: 24.12.0
     hasBin: true
 
   normalize-path@3.0.0:
@@ -1964,8 +1964,8 @@ packages:
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
 
-  vite@7.2.6:
-    resolution: {integrity: sha512-tI2l/nFHC5rLh7+5+o7QjKjSR04ivXDF4jcgV0f/bTQ+OJiITy5S6gaynVsEM+7RqzufMnVbIon6Sr5x1SDYaQ==}
+  vite@7.2.7:
+    resolution: {integrity: sha512-ITcnkFeR3+fI8P1wMgItjGrR10170d8auB4EpMLPqmx6uxElH3a/hHGQabSHKdqd4FXWO1nFIp9rRn7JQ34ACQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -2164,11 +2164,11 @@ snapshots:
   '@biomejs/cli-win32-x64@2.3.8':
     optional: true
 
-  '@commitlint/cli@20.2.0(@types/node@24.10.1)(typescript@5.9.3)':
+  '@commitlint/cli@20.2.0(@types/node@25.0.1)(typescript@5.9.3)':
     dependencies:
       '@commitlint/format': 20.2.0
       '@commitlint/lint': 20.2.0
-      '@commitlint/load': 20.2.0(@types/node@24.10.1)(typescript@5.9.3)
+      '@commitlint/load': 20.2.0(@types/node@25.0.1)(typescript@5.9.3)
       '@commitlint/read': 20.2.0
       '@commitlint/types': 20.2.0
       tinyexec: 1.0.2
@@ -2215,7 +2215,7 @@ snapshots:
       '@commitlint/rules': 20.2.0
       '@commitlint/types': 20.2.0
 
-  '@commitlint/load@20.2.0(@types/node@24.10.1)(typescript@5.9.3)':
+  '@commitlint/load@20.2.0(@types/node@25.0.1)(typescript@5.9.3)':
     dependencies:
       '@commitlint/config-validator': 20.2.0
       '@commitlint/execute-rule': 20.0.0
@@ -2223,7 +2223,7 @@ snapshots:
       '@commitlint/types': 20.2.0
       chalk: 5.6.2
       cosmiconfig: 9.0.0(typescript@5.9.3)
-      cosmiconfig-typescript-loader: 6.2.0(@types/node@24.10.1)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
+      cosmiconfig-typescript-loader: 6.2.0(@types/node@25.0.1)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -2487,7 +2487,7 @@ snapshots:
 
   '@types/conventional-commits-parser@5.0.2':
     dependencies:
-      '@types/node': 24.10.1
+      '@types/node': 25.0.1
 
   '@types/estree@1.0.8': {}
 
@@ -2501,7 +2501,7 @@ snapshots:
 
   '@types/minimatch@3.0.5': {}
 
-  '@types/node@24.10.1':
+  '@types/node@25.0.1':
     dependencies:
       undici-types: 7.16.0
 
@@ -2644,7 +2644,7 @@ snapshots:
 
   chrome-launcher@1.2.0:
     dependencies:
-      '@types/node': 24.10.1
+      '@types/node': 25.0.1
       escape-string-regexp: 4.0.0
       is-wsl: 2.2.0
       lighthouse-logger: 2.0.2
@@ -2746,9 +2746,9 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@6.2.0(@types/node@24.10.1)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3):
+  cosmiconfig-typescript-loader@6.2.0(@types/node@25.0.1)(cosmiconfig@9.0.0(typescript@5.9.3))(typescript@5.9.3):
     dependencies:
-      '@types/node': 24.10.1
+      '@types/node': 25.0.1
       cosmiconfig: 9.0.0(typescript@5.9.3)
       jiti: 2.6.1
       typescript: 5.9.3
@@ -3151,7 +3151,7 @@ snapshots:
 
   kleur@3.0.3: {}
 
-  ky@1.14.0: {}
+  ky@1.14.1: {}
 
   latest-version@9.0.0:
     dependencies:
@@ -3321,7 +3321,7 @@ snapshots:
       uuid: 8.3.2
       which: 2.0.2
 
-  node@runtime:24.11.1: {}
+  node@runtime:24.12.0: {}
 
   normalize-path@3.0.0: {}
 
@@ -3388,7 +3388,7 @@ snapshots:
 
   package-json@10.0.1:
     dependencies:
-      ky: 1.14.0
+      ky: 1.14.1
       registry-auth-token: 5.1.0
       registry-url: 6.0.1
       semver: 7.7.3
@@ -3784,13 +3784,13 @@ snapshots:
 
   uuid@8.3.2: {}
 
-  vite-node@3.2.4(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2):
+  vite-node@3.2.4(@types/node@25.0.1)(jiti@2.6.1)(yaml@2.8.2):
     dependencies:
       cac: 6.7.14
       debug: 4.4.3
       es-module-lexer: 1.7.0
       pathe: 2.0.3
-      vite: 7.2.6(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2)
+      vite: 7.2.7(@types/node@25.0.1)(jiti@2.6.1)(yaml@2.8.2)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -3805,7 +3805,7 @@ snapshots:
       - tsx
       - yaml
 
-  vite@7.2.6(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2):
+  vite@7.2.7(@types/node@25.0.1)(jiti@2.6.1)(yaml@2.8.2):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -3814,7 +3814,7 @@ snapshots:
       rollup: 4.53.3
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 24.10.1
+      '@types/node': 25.0.1
       fsevents: 2.3.3
       jiti: 2.6.1
       yaml: 2.8.2
@@ -3886,7 +3886,7 @@ snapshots:
     dependencies:
       is-wsl: 3.1.0
 
-  wxt@0.20.11(@types/node@24.10.1)(jiti@2.6.1)(rollup@4.53.3)(yaml@2.8.2):
+  wxt@0.20.11(@types/node@25.0.1)(jiti@2.6.1)(rollup@4.53.3)(yaml@2.8.2):
     dependencies:
       '@1natsu/wait-element': 4.1.2
       '@aklinker1/rollup-plugin-visualizer': 5.12.0(rollup@4.53.3)
@@ -3930,8 +3930,8 @@ snapshots:
       publish-browser-extension: 3.0.3
       scule: 1.3.0
       unimport: 5.5.0
-      vite: 7.2.6(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2)
-      vite-node: 3.2.4(@types/node@24.10.1)(jiti@2.6.1)(yaml@2.8.2)
+      vite: 7.2.7(@types/node@25.0.1)(jiti@2.6.1)(yaml@2.8.2)
+      vite-node: 3.2.4(@types/node@25.0.1)(jiti@2.6.1)(yaml@2.8.2)
       web-ext-run: 0.2.4
     transitivePeerDependencies:
       - '@types/node'
