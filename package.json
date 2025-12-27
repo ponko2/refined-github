@@ -7,8 +7,7 @@
     "@commitlint/cli": "20.2.0",
     "@commitlint/config-conventional": "20.2.0",
     "@tsconfig/strictest": "2.0.8",
-    "husky": "9.1.7",
-    "lint-staged": "16.2.7",
+    "lefthook": "2.0.13",
     "typescript": "5.9.3",
     "wxt": "0.20.13"
   },
@@ -29,7 +28,6 @@
     "fix": "biome check --write",
     "lint": "biome check",
     "postinstall": "wxt prepare",
-    "prepare": "node .husky/install.mjs",
     "setup": "corepack enable pnpm",
     "typecheck": "tsc --noEmit",
     "zip": "wxt zip",
