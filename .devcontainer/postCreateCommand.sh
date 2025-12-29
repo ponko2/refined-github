@@ -2,6 +2,10 @@
 
 set -euo pipefail
 
-git config --global --add safe.directory /workspaces/refined-github
+nix profile add nixpkgs#nix-direnv
+mkdir -p ~/.config/direnv
+echo "source ~/.nix-profile/share/nix-direnv/direnvrc" >> ~/.config/direnv/direnvrc
 
-pnpm install --force
+nix print-dev-env >/dev/null
+
+direnv allow
