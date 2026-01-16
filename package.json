@@ -7,7 +7,7 @@
     "@commitlint/cli": "20.3.1",
     "@commitlint/config-conventional": "20.3.1",
     "@tsconfig/strictest": "2.0.8",
-    "lefthook": "2.0.14",
+    "lefthook": "2.0.15",
     "typescript": "5.9.3",
     "wxt": "0.20.13"
   },
