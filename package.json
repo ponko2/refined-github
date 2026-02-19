@@ -3,7 +3,7 @@
   "description": "Simplifies the GitHub interface and adds useful features",
   "version": "0.1.0",
   "devDependencies": {
-    "@biomejs/biome": "2.4.0",
+    "@biomejs/biome": "2.4.1",
     "@commitlint/cli": "20.4.1",
     "@commitlint/config-conventional": "20.4.1",
     "@tsconfig/strictest": "2.0.8",
