@@ -1,7 +1,4 @@
-import type {
-  InvokeMenuItemFunctionMessage,
-  MenuItemId,
-} from "~/entrypoints/background";
+import type { InvokeMenuItemFunctionMessage, MenuItemId } from "~/entrypoints/background";
 
 export default defineContentScript({
   runAt: "document_start",
@@ -78,14 +75,8 @@ const menuItems: Record<MenuItemId, () => void> = {
 };
 
 // コンテキストメニューに対応する関数を実行
-function handleInvokeMenuItemFunctionMessage({
-  type,
-  menuItemId,
-}: InvokeMenuItemFunctionMessage) {
-  if (
-    type === "invokeMenuItemFunction" &&
-    typeof menuItems[menuItemId] === "function"
-  ) {
+function handleInvokeMenuItemFunctionMessage({ type, menuItemId }: InvokeMenuItemFunctionMessage) {
+  if (type === "invokeMenuItemFunction" && typeof menuItems[menuItemId] === "function") {
     menuItems[menuItemId]();
   }
 }
