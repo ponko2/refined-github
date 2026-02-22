@@ -113,6 +113,6 @@ function handleToggleMenuItemVisibilityMessage({
   visible,
 }: ToggleMenuItemVisibilityMessage) {
   if (type === "toggleMenuItemVisibility") {
-    browser.contextMenus.update(menuItemId, { visible });
+    void browser.contextMenus.update(menuItemId, { visible });
   }
 }
