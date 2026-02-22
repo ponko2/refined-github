@@ -21,8 +21,8 @@
     "zip:firefox": "wxt zip -b firefox"
   },
   "devDependencies": {
-    "@commitlint/cli": "20.4.1",
-    "@commitlint/config-conventional": "20.4.1",
+    "@commitlint/cli": "20.4.2",
+    "@commitlint/config-conventional": "20.4.2",
     "@tsconfig/strictest": "2.0.8",
     "lefthook": "2.1.1",
     "npm-run-all2": "8.0.4",
