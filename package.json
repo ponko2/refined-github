@@ -28,7 +28,7 @@
     "npm-run-all2": "8.0.4",
     "oxfmt": "0.34.0",
     "oxlint": "1.49.0",
-    "oxlint-tsgolint": "0.14.1",
+    "oxlint-tsgolint": "0.14.2",
     "typescript": "5.9.3",
     "wxt": "0.20.17"
   },
