@@ -93,6 +93,7 @@ jobs:
             oxlint:
               - *wxt
               - "**/*.{js,jsx,ts,tsx,mjs,cjs}"
+              - "**/.oxlintrc.json"
             yamllint:
               - *common
               - "**/*.{yaml,yml}"
