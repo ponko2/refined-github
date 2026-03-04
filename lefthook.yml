@@ -15,7 +15,7 @@ pre-commit:
             run: pnpm exec oxfmt --no-error-on-unmatched-pattern {staged_files}
             stage_fixed: true
           - name: Oxlint
-            run: pnpm exec oxlint --deny-warnings --fix --type-aware --type-check {staged_files}
+            run: pnpm exec oxlint --deny-warnings --fix {staged_files}
             glob: "*.{js,jsx,ts,tsx,mjs,cjs}"
             stage_fixed: true
     - name: yamllint

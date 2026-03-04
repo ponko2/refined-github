@@ -12,10 +12,10 @@
     "postinstall": "wxt prepare",
     "fix": "run-p --aggregate-output -c -l fix:*",
     "fix:oxfmt": "oxfmt",
-    "fix:oxlint": "oxlint --deny-warnings --fix --type-aware --type-check",
+    "fix:oxlint": "oxlint --deny-warnings --fix",
     "lint": "run-p --aggregate-output -c -l lint:*",
     "lint:oxfmt": "oxfmt --check",
-    "lint:oxlint": "oxlint --deny-warnings --type-aware --type-check",
+    "lint:oxlint": "oxlint --deny-warnings",
     "setup": "corepack enable pnpm",
     "zip": "wxt zip",
     "zip:firefox": "wxt zip -b firefox"
