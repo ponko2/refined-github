@@ -38,6 +38,8 @@
   "globals": {},
   "ignorePatterns": [],
   "options": {
+    "denyWarnings": true,
+    "reportUnusedDisableDirectives": "error",
     "typeAware": true,
     "typeCheck": true
   }
