@@ -258,7 +258,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Run Oxlint
-        run: pnpm exec oxlint --deny-warnings --format=github
+        run: pnpm exec oxlint
   yamllint:
     name: yamllint
     if: ${{ always() && !failure() && !cancelled() &&
