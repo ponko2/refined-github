@@ -7,7 +7,6 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
-  "oxc.typeAware": true,
   "[nix]": {
     "editor.defaultFormatter": "jnoortheen.nix-ide"
   }
